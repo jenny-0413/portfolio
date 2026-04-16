@@ -1,0 +1,65 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "success": "Operation successful",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back"
+  },
+"navigation": {
+  "home": "Home",
+  "projects": "Projects",
+  "about": "About",
+  "contact": "Contact"
+},
+  "home": {
+    "title": "Frontend Developer",
+    "subtitle": "I build modern and scalable web applications",
+    "cta": "View Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a frontend developer with experience building modern applications using React. I focus on creating clean, scalable, and user-centered interfaces."
+  },
+  "projects": {
+    "title": "Projects",
+    "viewCode": "View Code",
+    "liveDemo": "Live Demo",
+    "medicalApp": {
+      "title": "Medical Platform",
+      "description": "Web application with role-based system, authentication, and appointment management."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Interested in working with me?",
+    "button": "Contact Me"
+  },
+  "login": {
+    "title": "Login",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Password",
+    "forgotPassword": "Forgot your password?",
+    "resetPassword": "Reset",
+    "button": "Log In",
+    "noAccount": "Don't have an account?",
+    "registerHere": "Register here"
+  },
+  "validation": {
+    "emailRequired": "Email is required",
+    "validEmailRequired": "Please enter a valid email format",
+    "passwordRequired": "Password is required",
+    "completeRequiredFields": "Please complete the required fields"
+  },
+  "errors": {
+    "authErrorTitle": "Authentication Error",
+    "wrongCredentials": "Incorrect email or password",
+    "connectionErrorTitle": "Connection Error",
+    "connectionErrorText": "There was a problem connecting to the server"
+  }
+}

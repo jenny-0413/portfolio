@@ -1,0 +1,73 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ha ocurrido un error",
+    "success": "Operación exitosa",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "back": "Volver"
+  },
+
+"navigation": {
+  "home": "Inicio",
+  "projects": "Proyectos",
+  "about": "Sobre mí",
+  "contact": "Contacto"
+},
+
+  "home": {
+    "title": "Desarrolladora Frontend",
+    "subtitle": "Construyo aplicaciones web modernas y escalables",
+    "cta": "Ver proyectos"
+  },
+
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy desarrolladora frontend con experiencia en la creación de aplicaciones modernas usando React. Me enfoco en construir interfaces limpias, escalables y centradas en el usuario."
+  },
+
+  "projects": {
+    "title": "Proyectos",
+    "viewCode": "Ver código",
+    "liveDemo": "Ver demo",
+    "medicalApp": {
+      "title": "Plataforma Médica",
+      "description": "Aplicación web con sistema de roles, autenticación y gestión de citas médicas."
+    }
+  },
+
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Te interesa trabajar conmigo?",
+    "button": "Contáctame"
+  },
+
+  "login": {
+    "title": "Inicio de Sesión",
+    "emailLabel": "Correo",
+    "emailPlaceholder": "Correo",
+    "passwordLabel": "Contraseña",
+    "passwordPlaceholder": "Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "resetPassword": "Restablecer",
+    "button": "Ingresar",
+    "noAccount": "¿No tienes cuenta?",
+    "registerHere": "Regístrate"
+  },
+
+  "validation": {
+    "emailRequired": "El correo electrónico es requerido.",
+    "validEmailRequired": "Por favor, ingresa un formato de correo válido.",
+    "passwordRequired": "La contraseña es requerida",
+    "completeRequiredFields": "Por favor, completa los campos requeridos."
+  },
+
+  "errors": {
+    "authErrorTitle": "Error de autenticación",
+    "wrongCredentials": "Correo o contraseña incorrectos",
+    "connectionErrorTitle": "Error de conexión",
+    "connectionErrorText": "Hubo un problema al conectar con el servidor"
+  }
+}

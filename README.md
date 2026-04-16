@@ -1,9 +1,9 @@
 # Jenny Davila - Frontend Developer 🚀
 
-Frontend Developer specialized in React, focused on building modern, responsive, and high-performance web applications.
+Frontend Developer specialized in React, focused on building modern, scalable, and user-friendly web applications.
 
 ## 🧑‍💻 About Me
-I am a frontend developer with experience building applications using React, state management, and responsive design. I have worked on healthcare platforms, including scheduling systems and interactive user interfaces.
+I am a frontend developer with more than 2 years of experience building web applications using React. I have worked on healthcare platforms, developing features such as appointment scheduling systems, interactive calendars, and responsive interfaces.
 
 ## 🛠️ Technologies
 - React
@@ -14,7 +14,15 @@ I am a frontend developer with experience building applications using React, sta
 - Git & GitHub
 
 ## 💼 Projects
-🚧 Currently working on my portfolio projects...
+
+### 🏥 Medical Appointment System
+- Built a scheduling system for managing medical appointments
+- Implemented interactive calendars and modals
+- Developed using React, Redux, and SCSS
+
+### 📊 Dashboard Application
+- Created reusable components and responsive UI
+- Focused on performance optimization and clean architecture
 
 ## 📫 Contact
 - Email: fernandadavila228@gmail.com
