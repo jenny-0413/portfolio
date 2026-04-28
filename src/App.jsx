@@ -1,66 +1,41 @@
 import { useEffect, useMemo, useState } from "react";
-import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
+import { ThemeProvider, CssBaseline, createTheme } from "@mui/material";
+import { RouterApp } from "./router/RouterApp";
 import "./i18n";
-import { Header } from "./components/Header";
-
-// Pages
-import { Home } from "./pages";
 
 export const App = () => {
-  // 🌙 Estado del tema
-  const [themeMode, setThemeMode] = useState(() => {
-    const savedTheme = localStorage.getItem("theme");
+  const [themeMode, setThemeMode] = useState(
+    () => localStorage.getItem("theme") || "dark"
+  );
 
-    if (savedTheme) return savedTheme;
-
-    // Detectar sistema la primera vez
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
-  });
-
-  // 🔄 Sincronizar tema con HTML + localStorage
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", themeMode);
     localStorage.setItem("theme", themeMode);
   }, [themeMode]);
 
-  // 🔁 Toggle tema
   const toggleTheme = () => {
-    setThemeMode(prev => (prev === "light" ? "dark" : "light"));
+    setThemeMode(prev => (prev === "dark" ? "light" : "dark"));
   };
 
-  // 🎨 Tema MUI
-  const theme = useMemo(() =>
+  const muiTheme = useMemo(() =>
     createTheme({
       palette: {
         mode: themeMode,
-        primary: {
-          main: themeMode === "dark" ? "#c084fc" : "#aa3bff",
-        },
-        background: {
-          default: themeMode === "dark" ? "#121212" : "#ffffff",
-        },
-        text: {
-          primary: themeMode === "dark" ? "#ffffff" : "#000000",
-        },
       },
+      shape: {
+        borderRadius: 12
+      }
     }),
-    [themeMode]);
+  [themeMode]);
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={muiTheme}>
       <CssBaseline />
 
-      <div className="app-container">
-
-        <Header toggleTheme={toggleTheme} themeMode={themeMode} />
-
-        <main>
-          <Home />
-        </main>
-      </div>
-
+      <RouterApp
+        themeMode={themeMode}
+        toggleTheme={toggleTheme}
+      />
     </ThemeProvider>
   );
 };
