@@ -1,8 +1,26 @@
-import { AppBar, Toolbar, Button, IconButton, Box } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  Button,
+  IconButton,
+  Box
+} from "@mui/material";
+
+import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export const Header = ({ toggleTheme, themeMode }) => {
   const { t, i18n } = useTranslation();
+
+  const activeStyle = ({ isActive }) => ({
+    color: isActive ? "#fff" : "var(--text-heading)",
+    backgroundColor: isActive
+      ? "var(--accent)"
+      : "transparent",
+    borderRadius: "12px",
+    fontWeight: isActive ? 700 : 500,
+    textDecoration: "none"
+  });
 
   return (
     <AppBar
@@ -10,8 +28,7 @@ export const Header = ({ toggleTheme, themeMode }) => {
       elevation={0}
       sx={{
         background: "var(--bg)",
-        borderBottom: "1px solid var(--border)",
-        color: "var(--text-heading)"
+        borderBottom: "1px solid var(--border)"
       }}
     >
       <Toolbar
@@ -23,36 +40,59 @@ export const Header = ({ toggleTheme, themeMode }) => {
           justifyContent: "space-between"
         }}
       >
-        {/* Marca */}
-        <Box sx={{ fontWeight: 700 }}>
+        {/* Logo */}
+        <Box
+          component={NavLink}
+          to="/"
+          sx={{
+            fontWeight: 800,
+            textDecoration: "none",
+            color: "var(--text-heading)"
+          }}
+        >
           Jenny Dev
         </Box>
 
         {/* Navegación */}
         <Box sx={{ display: "flex", gap: 1 }}>
-          <Button color="inherit">{t("navigation.home")}</Button>
-          <Button color="inherit">{t("navigation.projects")}</Button>
-          <Button color="inherit">{t("navigation.about")}</Button>
-          <Button color="inherit">{t("navigation.contact")}</Button>
+          <Button
+            component={NavLink}
+            to="/"
+            end
+            style={activeStyle}
+          >
+            {t("navigation.home")}
+          </Button>
+
+          <Button
+            component={NavLink}
+            to="/projects"
+            style={activeStyle}
+          >
+            {t("navigation.projects")}
+          </Button>
+
+          <Button
+            component={NavLink}
+            to="/about"
+            style={activeStyle}
+          >
+            {t("navigation.about")}
+          </Button>
+
+          <Button
+            component={NavLink}
+            to="/contact"
+            style={activeStyle}
+          >
+            {t("navigation.contact")}
+          </Button>
         </Box>
 
-        {/* Acciones */}
+        {/* Actions */}
         <Box sx={{ display: "flex", gap: 1 }}>
-          <Button
-            size="small"
-            variant="outlined"
-            onClick={() => i18n.changeLanguage("es")}
-          >
-            ES
-          </Button>
-
-          <Button
-            size="small"
-            variant="outlined"
-            onClick={() => i18n.changeLanguage("en")}
-          >
-            EN
-          </Button>
+          <Button onClick={() => i18n.changeLanguage("es")}>ES</Button>
+          <Button onClick={() => i18n.changeLanguage("en")}>EN</Button>
 
           <IconButton onClick={toggleTheme}>
             {themeMode === "dark" ? "☀️" : "🌙"}
