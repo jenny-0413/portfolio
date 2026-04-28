@@ -9,28 +9,50 @@
     "delete": "Delete",
     "back": "Back"
   },
-"navigation": {
-  "home": "Home",
-  "projects": "Projects",
-  "about": "About",
-  "contact": "Contact"
-},
+  "navigation": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
   "home": {
-    "title": "Frontend Developer",
-    "subtitle": "I build modern and scalable web applications",
-    "cta": "View Projects"
+    "greeting": "Hi, I'm",
+    "role": "Frontend Developer with experience delivering client solutions across healthcare, education and digital products",
+    "description": "I have professional experience building custom solutions for clients in healthcare, education, gaming and digital marketing. I work with React, JavaScript and modern technologies to create scalable, user-focused applications.",
+    "projects": "View Projects",
+    "cv": "Download Resume"
   },
   "about": {
     "title": "About Me",
     "description": "I am a frontend developer with experience building modern applications using React. I focus on creating clean, scalable, and user-centered interfaces."
   },
   "projects": {
-    "title": "Projects",
-    "viewCode": "View Code",
-    "liveDemo": "Live Demo",
-    "medicalApp": {
-      "title": "Medical Platform",
-      "description": "Web application with role-based system, authentication, and appointment management."
+    "label": "PORTFOLIO",
+    "title": "Selected Work & Client Experience",
+    "description": "Real-world projects delivered across healthcare, education, marketing and gaming industries.",
+    "confidential": "Confidential project",
+    "preview": "Preview",
+    "items": {
+      "healthcare": {
+        "title": "Healthcare Management Platform",
+        "category": "Healthcare",
+        "description": "Frontend development for medical workflows, forms, responsive dashboards and internal operations."
+      },
+      "education": {
+        "title": "Education Management System",
+        "category": "Education",
+        "description": "Multilingual interfaces, dashboards and academic modules with responsive design."
+      },
+      "filters": {
+        "title": "AR Filters for Social Campaigns",
+        "category": "Marketing",
+        "description": "Interactive branded filters for Instagram and TikTok campaigns focused on engagement."
+      },
+      "roblox": {
+        "title": "Custom Roblox Experience",
+        "category": "Gaming",
+        "description": "Gameplay systems and Lua scripting for custom interactive experiences."
+      }
     }
   },
   "contact": {

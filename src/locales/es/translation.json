@@ -9,41 +9,57 @@
     "delete": "Eliminar",
     "back": "Volver"
   },
-
-"navigation": {
-  "home": "Inicio",
-  "projects": "Proyectos",
-  "about": "Sobre mí",
-  "contact": "Contacto"
-},
-
-  "home": {
-    "title": "Desarrolladora Frontend",
-    "subtitle": "Construyo aplicaciones web modernas y escalables",
-    "cta": "Ver proyectos"
+  "navigation": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "contact": "Contacto"
   },
-
+  "home": {
+    "greeting": "Hola, soy",
+    "role": "Desarrolladora Frontend con experiencia entregando soluciones para clientes en salud, educación y productos digitales",
+    "description": "Tengo experiencia profesional desarrollando soluciones personalizadas para clientes en salud, educación, videojuegos y marketing digital. Trabajo con React, JavaScript y tecnologías modernas para crear aplicaciones escalables enfocadas en el usuario.",
+    "projects": "Ver Proyectos",
+    "cv": "Descargar CV"
+  },
   "about": {
     "title": "Sobre mí",
     "description": "Soy desarrolladora frontend con experiencia en la creación de aplicaciones modernas usando React. Me enfoco en construir interfaces limpias, escalables y centradas en el usuario."
   },
-
   "projects": {
-    "title": "Proyectos",
-    "viewCode": "Ver código",
-    "liveDemo": "Ver demo",
-    "medicalApp": {
-      "title": "Plataforma Médica",
-      "description": "Aplicación web con sistema de roles, autenticación y gestión de citas médicas."
+    "label": "PORTAFOLIO",
+    "title": "Proyectos Seleccionados y Experiencia con Clientes",
+    "description": "Proyectos reales desarrollados para clientes en salud, educación, marketing y videojuegos.",
+    "confidential": "Proyecto confidencial",
+    "preview": "Vista previa",
+    "items": {
+      "healthcare": {
+        "title": "Plataforma de Gestión Médica",
+        "category": "Salud",
+        "description": "Desarrollo frontend para flujos médicos, formularios, dashboards responsivos y operaciones internas."
+      },
+      "education": {
+        "title": "Sistema de Gestión Educativa",
+        "category": "Educación",
+        "description": "Interfaces multilenguaje, dashboards y módulos académicos con diseño responsivo."
+      },
+      "filters": {
+        "title": "Filtros AR para Campañas Sociales",
+        "category": "Marketing",
+        "description": "Filtros interactivos para campañas en Instagram y TikTok orientadas a engagement."
+      },
+      "roblox": {
+        "title": "Experiencia Personalizada en Roblox",
+        "category": "Gaming",
+        "description": "Sistemas de juego y scripting en Lua para experiencias personalizadas."
+      }
     }
   },
-
   "contact": {
     "title": "Contacto",
     "subtitle": "¿Te interesa trabajar conmigo?",
     "button": "Contáctame"
   },
-
   "login": {
     "title": "Inicio de Sesión",
     "emailLabel": "Correo",
@@ -56,14 +72,12 @@
     "noAccount": "¿No tienes cuenta?",
     "registerHere": "Regístrate"
   },
-
   "validation": {
     "emailRequired": "El correo electrónico es requerido.",
     "validEmailRequired": "Por favor, ingresa un formato de correo válido.",
     "passwordRequired": "La contraseña es requerida",
     "completeRequiredFields": "Por favor, completa los campos requeridos."
   },
-
   "errors": {
     "authErrorTitle": "Error de autenticación",
     "wrongCredentials": "Correo o contraseña incorrectos",
